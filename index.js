@@ -122,7 +122,7 @@ const fi = (function() {
         return Array.from(new Set(collection))
       } else {
         const modifiedVals = new Set()
-        const uniqVals = new Set()
+        const uniqVals = new Set();
         for (let val of collection) {
           const moddedVal = iteratee(val)
           if (!modifiedVals.has(moddedVal)) {
