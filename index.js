@@ -19,8 +19,8 @@ const fi = (function() {
 
       const newArr = []
 
-      for (let idx = 0; idx < collection.length; idx++)
-        newArr.push(iteratee(collection[idx]))
+      for (let i = 0; i < collection.length; i++)
+        newArr.push(iteratee(collection[i]))
 
       return newArr
     },
