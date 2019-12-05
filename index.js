@@ -7,8 +7,8 @@ const fi = (function() {
     each: function(collection, iteratee) {
       const newCollection = (collection instanceof Array) ? collection.slice() : Object.values(collection)
 
-      for (let idx = 0; idx < newCollection.length; idx++)
-        iteratee(newCollection[idx])
+      for (let i = 0; i < newCollection.length; i++)
+        iteratee(newCollection[i])
 
       return collection
     },
